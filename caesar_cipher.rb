@@ -1,9 +1,10 @@
+# Define a method that implenets the Caesar cipher 
+# to a specific string with a specific factor.
 
 def caesar_cipher text,factor
 	
 		cipher_text = text.split("").map do |letter|
 			letter_number = letter.ord
-			
 
 			if letter =~ /\W/
 				letter = letter  							
@@ -14,12 +15,8 @@ def caesar_cipher text,factor
 			end
 		end
 	
-
 		cipher_text.join
-
 end
-
-
 
 puts "Please enter a sentence."
 
