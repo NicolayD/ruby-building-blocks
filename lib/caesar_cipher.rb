@@ -1,4 +1,4 @@
-# Define a method that implenets the Caesar cipher 
+# Define a method that implements the Caesar cipher 
 # to a specific string with a specific factor.
 
 def caesar_cipher text,factor
@@ -6,7 +6,7 @@ def caesar_cipher text,factor
 		cipher_text = text.split("").map do |letter|
 			letter_number = letter.ord
 
-			if letter =~ /\W/
+			if letter =~ /\W|\d/
 				letter = letter  							
 			elsif letter.upcase.ord - factor.to_i < 65
 				letter = (letter_number + 26 - factor.to_i).chr
