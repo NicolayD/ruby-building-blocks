@@ -18,6 +18,7 @@ def caesar_cipher text,factor
 		cipher_text.join
 end
 
+=begin
 puts "Please enter a sentence."
 
 string = gets.chomp
@@ -29,3 +30,4 @@ shift = gets.chomp
 puts "This is how your string would like with the Caesar cipher:"
 
 puts caesar_cipher(string,shift)
+=end
